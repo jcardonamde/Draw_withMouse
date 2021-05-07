@@ -12,10 +12,8 @@ function sizeInCanvas() {
     var h_canvas = document.getElementById("height_canvas");   
     canvas.width = parseInt(w_canvas.value);
     canvas.height = parseInt(h_canvas.value);
-    
     var wh = canvas.width;
     var ht = canvas.height;
-    
     drawLine("white", 1, 1, 1, ht, drawArea);
     drawLine("white", 1, ht, wh, ht, drawArea);
     drawLine("white", wh, 1, 1, 1, drawArea);
@@ -113,7 +111,6 @@ function changeWidthStrong() {
 // Agradezco que me dejen un mensaje si se les ocurre una manera más optima para limpiar
 var buttonClear = document.getElementById("button_clean");
 buttonClear.addEventListener("click", clearCanvas);
-
 function clearCanvas() {
 	drawArea.clearRect(0, 0, 0, 0);
     canvas.width=canvas.width;
